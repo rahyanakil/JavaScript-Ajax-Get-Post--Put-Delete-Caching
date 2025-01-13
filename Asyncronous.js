@@ -7,3 +7,4 @@ setTimeout(()=>{
        console.log("I am asyncronous though i execuited early but i will be appear in 3 sec")
 },3000)
 console.log("I am execuited lately but i will be appear before ")
+

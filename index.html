@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="getfetch()" class="fetch-btn">Show</button>
+    </div>
+    <p id="output"></p>
+</body>
+<script>
+ async function getfetch(){
+    const response =await fetch("https://crud.teamrabbil.com/api/v1/ReadProduct")
+    const data = await response.json()
+    const setdata = document.querySelector("#output")
+    setdata.textContent= JSON.stringify(data)
+
+ }
+</script>
+</html>
